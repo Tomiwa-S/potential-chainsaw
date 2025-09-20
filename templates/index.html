@@ -1,10 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Flask on EC2</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beautiful One Pager</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f0f4ff, #d9e8ff);
+      color: #333;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    h1, h2, h3 {
+      margin: 0;
+    }
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    /* Header */
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 60px 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #e0f0ff;
+    }
+
+    /* About Section */
+    #about {
+      background-color: #fff;
+      color: #333;
+    }
+    #about h2 {
+      color: #4a90e2;
+      margin-bottom: 20px;
+      font-size: 2.5em;
+    }
+    #about p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1em;
+      line-height: 1.8;
+    }
+
+    /* Services Section */
+    #services {
+      background-color: #f0f4ff;
+      color: #333;
+    }
+    .service-box {
+      display: inline-block;
+      width: 280px;
+      margin: 20px;
+      padding: 30px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .service-box:hover {
+      transform: translateY(-10px);
+    }
+    .service-box h3 {
+      color: #4a90e2;
+      margin-bottom: 15px;
+    }
+    .service-box p {
+      font-size: 1em;
+      line-height: 1.6;
+    }
+
+    /* Contact Section */
+    #contact {
+      background-color: #4a90e2;
+      color: white;
+    }
+    #contact h2 {
+      margin-bottom: 20px;
+      font-size: 2.5em;
+    }
+    #contact p {
+      margin-bottom: 40px;
+      font-size: 1.1em;
+    }
+    #contact a {
+      display: inline-block;
+      background: white;
+      color: #4a90e2;
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: background 0.3s, color 0.3s;
+    }
+    #contact a:hover {
+      background: #e0f0ff;
+      color: #333;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .service-box {
+        width: 80%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Hello from Flask on EC2 with GitHub Actions!</h1>
-    <p>Made by Oluwatomiwa</p>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to Our Website</h1>
+    <p>Beautiful design, clean code, all in one page</p>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      We create clean, modern, and responsive web experiences. 
+      Our mission is to deliver high-quality web solutions that are not only visually appealing but also highly functional. 
+      We focus on simplicity, elegance, and user experience.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service-box">
+      <h3>Web Design</h3>
+      <p>We craft beautiful and responsive web designs tailored to your brand and audience.</p>
+    </div>
+    <div class="service-box">
+      <h3>Web Development</h3>
+      <p>Our development team builds high-performance websites with clean, maintainable code.</p>
+    </div>
+    <div class="service-box">
+      <h3>SEO Optimization</h3>
+      <p>We ensure your website is optimized for search engines to increase visibility and traffic.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have a project in mind? Get in touch and let's make it happen.</p>
+    <a href="mailto:contact@website.com">Email Us</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Beautiful One Pager. All Rights Reserved.
+  </footer>
+
 </body>
 </html>
